@@ -1,0 +1,47 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 65.000000000000000000
+    Position.Y = 19.000000000000000000
+    DragMode = dmAutomatic
+  end
+  object Panel1: TPanel
+    Position.X = 281.000000000000000000
+    Position.Y = 60.000000000000000000
+    Size.Width = 237.000000000000000000
+    Size.Height = 298.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    OnDragOver = Panel1DragOver
+    OnDragDrop = Panel1DragDrop
+    object Edit2: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Position.X = 40.000000000000000000
+      Position.Y = 21.000000000000000000
+      OnMouseDown = Edit2MouseDown
+    end
+  end
+  object ScrollBox1: TScrollBox
+    Position.X = 39.000000000000000000
+    Position.Y = 63.000000000000000000
+    Size.Width = 168.000000000000000000
+    Size.Height = 295.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    OnDragOver = ScrollBox1DragOver
+    OnDragDrop = ScrollBox1DragDrop
+    Viewport.Width = 168.000000000000000000
+    Viewport.Height = 295.000000000000000000
+  end
+end
